@@ -65,7 +65,7 @@ elif option == "2":
     os.system(f"sudo ifconfig {iface} up")
 elif option == "3":
     print("Intercepting and modifying traffic...")
-    os.system(f"sudo bettercap -iface {iface} -proxy -tcp-proxy -caplet http.cap")
+    os.system(f"sudo bettercap -iface {iface} -caplet http.cap")
 elif option == "4":
     print("Exiting...")
 else:
